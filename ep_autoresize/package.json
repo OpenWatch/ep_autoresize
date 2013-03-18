@@ -1,0 +1,9 @@
+{
+  "name": "ep_autoresize",
+  "version": "0.0.1",
+  "description": "Automatically Resize EPL iFrames using HTML5 Message Passing",
+  "author": "Miserlou (Rich Jones) <rich@openwatch.net>",
+  "contributors": [],
+  "dependencies": {},
+  "engines": { "node": ">= 0.6.0"}
+}

@@ -1,0 +1,10 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "hooks": {
+        "eejsBlock_scripts": "ep_example_plugin/scripts"
+      }
+    }
+  ]
+}
