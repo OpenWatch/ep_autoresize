@@ -3,7 +3,7 @@
     {
       "name": "main",
       "hooks": {
-        "eejsBlock_scripts": "ep_example_plugin/scripts"
+        "eejsBlock_scripts": "ep_autoresize/scripts"
       }
     }
   ]

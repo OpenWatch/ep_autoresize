@@ -11,7 +11,7 @@ var eejs = require("ep_etherpad-lite/node/eejs");
 // by appdending the incoming block content with a link to our own stylesheet.
 exports.eejsBlock_scripts= function(hook_name, args, cb){
 
-    args.content = args.content + "<script>alert('hello');</script>";
+    args.content = args.content + "<script>setTimeout(function(){parent.postMessage($('#editorcontainer').find('iframe')[0].contentDocument.getElementById('outerdocbody').firstElementChild.scrollHeight + 200, 'http://localhost:5000/i/2/');}, 2000); </script>";
 
     return cb();
 }
