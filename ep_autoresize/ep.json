@@ -4,6 +4,9 @@
       "name": "main",
       "hooks": {
         "eejsBlock_scripts": "ep_autoresize/scripts"
+      },
+      "client_hooks": {
+        "aceEditEvent": "ep_autoresize/static/js/index:aceEditEvent"
       }
     }
   ]

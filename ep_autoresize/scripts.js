@@ -11,7 +11,8 @@ var eejs = require("ep_etherpad-lite/node/eejs");
 // by appdending the incoming block content with a link to our own stylesheet.
 exports.eejsBlock_scripts= function(hook_name, args, cb){
 
-    args.content = args.content + "<script>setTimeout(function(){parent.postMessage($('#editorcontainer').find('iframe')[0].contentDocument.getElementById('outerdocbody').firstElementChild.scrollHeight + 200, 'http://localhost:5000/i/2/');}, 2000); </script>";
+    args.content = args.content + "<script>var last_height= 600;setTimeout(function(){parent.postMessage($('#editorcontainer').find('iframe')[0].contentDocument.getElementById('outerdocbody').firstElementChild.scrollHeight, 'http://localhost:5000/i/2/');}, 2000); </script>";
+    args.content = args.content + "<script>setTimeout(function(){$($('#editorcontainer').find('iframe')[0].contentDocument.getElementsByTagName('html')[0]).css('overflow', 'hidden');}, 3333); </script>";
 
     return cb();
 }
