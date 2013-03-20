@@ -19,7 +19,7 @@ Use HTML5 message passing to automagically resize EPL iframes.
         window.addEventListener('message', function(event) {
           if (event.origin !== other_domain) return; // only accept messages from the specified domain
           if (isNaN(event.data)) return; // only accept something which can be parsed as a number
-          var height = parseInt(event.data); // add some extra height to avoid scrollbar
+          var height = parseInt(event.data); 
           iframe.height = height + "px";
         }, false);
       }
