@@ -5,9 +5,13 @@ Use HTML5 message passing to automagically resize EPL iframes.
 
 # Server Settings
 
+    ep_autosize = {
+        is_https: false
+    },
+
 # Client Javascript
 
-    <iframe src="http://yourpad.url/p/pid" class="span9" id="thePad" onload="resizeCrossDomainIframe('thePad', 'http://yourpad.url');" >
+    <iframe src="http://yourpad.url/p/pid&parentUrl=yourparent.url/where_this_iframe_is_right_now" class="span9" id="thePad" onload="resizeCrossDomainIframe('thePad', 'http://yourpad.url');" >
 
     <script type="text/javascript">
       function resizeCrossDomainIframe(id, other_domain) {
